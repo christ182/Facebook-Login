@@ -1,5 +1,5 @@
 //
-//  SCViewController.h
+//  SCLoginViewController.h
 //  FBlogin
 //
 //  Created by Rommel Bulalacao on 2/2/13.
@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SCViewController : UIViewController
+@interface SCLoginViewController : UIViewController
+
+- (void)loginFailed;
+
 
 @end

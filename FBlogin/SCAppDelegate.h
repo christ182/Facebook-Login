@@ -11,5 +11,6 @@
 @interface SCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+- (void)openSession;
 
 @end
