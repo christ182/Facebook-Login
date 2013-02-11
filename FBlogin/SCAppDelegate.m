@@ -123,7 +123,7 @@
     [FBSession openActiveSessionWithReadPermissions:nil allowLoginUI:YES completionHandler: ^(FBSession *session,FBSessionState state, NSError *error) {
          [self sessionStateChanged:session state:state error:error];
      }];
-}
+}		
 
 
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -26,10 +26,10 @@
 		D488572916BD284E00629641 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D488570416BD284D00629641 /* Foundation.framework */; };
 		D488573116BD284E00629641 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D488572F16BD284E00629641 /* InfoPlist.strings */; };
 		D488573416BD284E00629641 /* FBloginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D488573316BD284E00629641 /* FBloginTests.m */; };
-		D488573E16BD286B00629641 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D488573D16BD286B00629641 /* FacebookSDK.framework */; };
 		D488574816BD289400629641 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D488574516BD289400629641 /* Accounts.framework */; };
 		D488574916BD289400629641 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D488574616BD289400629641 /* AdSupport.framework */; };
 		D488574A16BD289400629641 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D488574716BD289400629641 /* Social.framework */; };
+		D4E2901816C927F200F72411 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E2901716C927F200F72411 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +69,10 @@
 		D488573016BD284E00629641 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D488573216BD284E00629641 /* FBloginTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBloginTests.h; sourceTree = "<group>"; };
 		D488573316BD284E00629641 /* FBloginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBloginTests.m; sourceTree = "<group>"; };
-		D488573D16BD286B00629641 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		D488574516BD289400629641 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		D488574616BD289400629641 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		D488574716BD289400629641 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D4E2901716C927F200F72411 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 				D488570316BD284D00629641 /* UIKit.framework in Frameworks */,
 				D488570516BD284D00629641 /* Foundation.framework in Frameworks */,
 				D488570716BD284D00629641 /* CoreGraphics.framework in Frameworks */,
-				D488573E16BD286B00629641 /* FacebookSDK.framework in Frameworks */,
+				D4E2901816C927F200F72411 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +128,7 @@
 		D488570116BD284D00629641 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D488573D16BD286B00629641 /* FacebookSDK.framework */,
+				D4E2901716C927F200F72411 /* FacebookSDK.framework */,
 				D488570216BD284D00629641 /* UIKit.framework */,
 				D488570416BD284D00629641 /* Foundation.framework */,
 				D488570616BD284D00629641 /* CoreGraphics.framework */,
@@ -409,6 +409,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Documents/FacebookSDK\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBlogin/FBlogin-Prefix.pch";
@@ -425,6 +426,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Documents/FacebookSDK\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBlogin/FBlogin-Prefix.pch";
